@@ -1,10 +1,11 @@
 import { View, Text } from 'react-native'
 import React from 'react'
+import Camera from './Camera'
 
 const HomeScreen = () => {
   return (
     <View>
-      <Text>Home</Text>
+     <Camera />
     </View>
   )
 }
