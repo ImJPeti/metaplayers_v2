@@ -12,14 +12,17 @@ import {
 } from "react-native";
 import React, { useLayoutEffect, useRef, useState, useEffect } from "react";
 import { AntDesign, Entypo, Ionicons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/core";
 
 export default function NavBar() {
+  const navigation = useNavigation()
+
   return (
     <View style={styles.View}>
       <View style={styles.bottomnav}>
         <TouchableOpacity
           style={styles.TouchableOpacity}
-          onPress={() => navigation.navigate("MyProfile")}
+          onPress={() => navigation.navigate("Home")}
         >
           <Ionicons
             name="grid-outline"
@@ -29,7 +32,7 @@ export default function NavBar() {
           />
         </TouchableOpacity>
 
-        <TouchableOpacity onPress={() => navigation.navigate("Cab")}>
+        <TouchableOpacity onPress={() => navigation.navigate("Tournaments")}>
           <Ionicons
             name="trophy-outline"
             size={30}
@@ -39,19 +42,19 @@ export default function NavBar() {
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.TouchableOpacity}
-          onPress={() => navigation.navigate("Chat")}
+          onPress={() => navigation.navigate("Challenges")}
         >
           <Ionicons name="skull-outline" size={30} color="#A18DF9" />
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.TouchableOpacity}
-          onPress={() => navigation.navigate("Chat")}
+          onPress={() => navigation.navigate("Organizations")}
         >
           <Ionicons name="business-outline" size={30} color="#A18DF9" />
         </TouchableOpacity>
         <TouchableOpacity
           style={styles.TouchableOpacity}
-          onPress={() => navigation.navigate("Chat")}
+          onPress={() => navigation.navigate("News")}
         >
           <Ionicons name="newspaper-outline" size={30} color="#A18DF9" />
         </TouchableOpacity>
