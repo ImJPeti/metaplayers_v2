@@ -1,0 +1,18 @@
+{
+  "_id": {
+    "$oid": "60f7ffca2b07f63bfd05aff2"
+  },
+  "name": "Gamerland",
+  "displayName": "Gamerland",
+  "description": "Gamerland is the largest gaming venue in Central Europe, uniquely designed for hosting professional gaming events.",
+  "createdAt": 1626865610,
+  "coverImageName": "esm_1665586505237_Gamerland_banner.jpg",
+  "profileImageName": "esm_1665586486342_Gamerland_profil.jpg",
+  "closed": 0,
+  "facebook": "https://www.facebook.com/gamerlandhu",
+  "twitch": "https://www.twitch.tv/gamerlandtv",
+  "createdBy": "zoli",
+  "twitter": "https://twitter.com/gamerlandhu",
+  "instagram": "https://www.instagram.com/gamerlandhu/",
+  "shortDescription": "Gamerland is the largest gaming venue in Central Europe."
+}
