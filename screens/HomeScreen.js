@@ -6,6 +6,7 @@ import {
   Image,
   ScrollView,
   FlatList,
+  TouchableOpacity
 } from "react-native";
 import React from 'react'
 import Camera from './Camera'
@@ -14,12 +15,15 @@ import { AntDesign, Entypo, Ionicons } from "@expo/vector-icons";
 import Games from "../components/Games";
 import Tournaments from "../components/Tournaments";
 import OpenChallenges from "../components/OpenChallenges";
+import { useNavigation } from "@react-navigation/core";
 
 
 const HomeScreen = () => {
+  const navigation = useNavigation();
+
   return (
     <SafeAreaView style={styles.container}>
-      <View style={{flex: 1}}>
+      <View style={{ flex: 1 }}>
         <View
           style={{
             display: "flex",
@@ -30,12 +34,14 @@ const HomeScreen = () => {
           }}
         >
           <Text style={styles.Category}>Dashboard</Text>
-          <Ionicons
-            name="person-circle"
-            size={30}
-            color="#1DA1F2"
-            style={{ top: 15, left: 40 }}
-          />
+          <TouchableOpacity onPress={()=>navigation.navigate("Profile")}>
+            <Ionicons
+              name="person-circle"
+              size={30}
+              color="#1DA1F2"
+              style={{ top: 15, left: 40 }}
+            />
+          </TouchableOpacity>
           <Ionicons
             name="notifications"
             size={30}

@@ -6,6 +6,8 @@ import Tournaments from './screens/Tournaments'
 import Challenges from './screens/Challenges'
 import Organizations from './screens/Organizations'
 import News from './screens/News'
+import Profile from './screens/Profile'
+import BarcodeScanner from './screens/BarcodeScanner'
 
 const Stack = createNativeStackNavigator();
 
@@ -21,6 +23,10 @@ const StackNavigator = () => {
       <Stack.Screen name="Challenges" component={Challenges} />
       <Stack.Screen name="Organizations" component={Organizations} />
       <Stack.Screen name="News" component={News} />
+      <Stack.Group screenOptions={{ presentation: "modal" }}>
+        <Stack.Screen name="Profile" component={Profile} />
+        <Stack.Screen name="Barcode" component={BarcodeScanner} />
+      </Stack.Group>
     </Stack.Navigator>
   );
 };
