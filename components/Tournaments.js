@@ -11,11 +11,10 @@ import React from "react";
 import { AntDesign, Entypo, Ionicons } from "@expo/vector-icons";
 import data from "../datas/tournament.json";
 
-console.log(data)
 const Tournaments = () => {
 
   const splitDate = data[0].tournamentStartsAt.split("-");
-
+  const splitDate2 = data[1].tournamentStartsAt.split("-");
   return (
     <View>
       <ScrollView style={{ marginBottom: 50 }}>
@@ -67,6 +66,41 @@ const Tournaments = () => {
                 </Text>
                 <View style={{ backgroundColor: "#6E7191", width: 100, marginLeft: 5, marginTop: 8, padding: 6, borderRadius: 10}}>
                   <Text style={{ color: "white", textAlign: "center" }}>{splitDate[1]}/{splitDate[2][1]}/{splitDate[0]}</Text>
+                </View>
+              </View>
+            </View>
+          </View>
+          <View style={styles.orgsContainer}>
+            <View style={styles.textSide}>
+              <Image
+                source={require("../assets/brawl.jpg")}
+                style={styles.gameImg}
+              />
+              <View>
+                <Text
+                  style={{
+                    color: "white",
+                    fontSize: 15,
+                    fontWeight: "bold",
+                    marginTop: 10,
+                    textAlign: "center",
+                    letterSpacing: 0.7,
+                  }}
+                >
+                  {data[1].title}
+                </Text>
+                <Text
+                  style={{
+                    color: "white",
+                    marginTop: 6,
+                    fontWeight: "200",
+                    marginLeft: 2,
+                  }}
+                >
+                  Team size: {data[1].teamSize}
+                </Text>
+                <View style={{ backgroundColor: "#6E7191", width: 100, marginLeft: 5, marginTop: 8, padding: 6, borderRadius: 10}}>
+                  <Text style={{ color: "white", textAlign: "center" }}>{splitDate2[1]}/{splitDate2[2][1]}/{splitDate2[0]}</Text>
                 </View>
               </View>
             </View>

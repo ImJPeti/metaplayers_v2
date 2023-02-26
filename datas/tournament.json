@@ -19,5 +19,68 @@
         "createdAt": "2021-02-28T13:09:05+00:00",
         "createdBy": "zoli",
         "status": "TOURNAMENT_STATUS_PUBLISHED"
+    },
+    {
+        "title": "Brawl Stars - #SamsunGGamer Reco..",
+        "teamSize": 1,
+        "maxTeamCount": 64,
+        "registrationStartsAt": "2021-03-01T15:00:00+00:00",
+        "registrationClosesAt": "2021-03-06T12:15:00+00:00",
+        "tournamentStartsAt": "2021-03-06T13:00:00+00:00",
+        "game": "brawl",
+        "gameMode": "TOURNAMENT_GAMEMODE_DRAFT",
+        "bracketType": "TOURNAMENT_BRACKET_TYPE_SINGLE_ELIMINATION",
+        "groupStage": "TOURNAMENT_GROUP_STAGE_FALSE",
+        "description": " ",
+        "internalWalletId": null,
+        "entryFee": {
+            "amount": 0,
+            "currency": "ESM"
+        },
+        "createdAt": "2023-04-28T13:09:05+00:00",
+        "createdBy": "zoli",
+        "status": "TOURNAMENT_STATUS_PUBLISHED"
+    },
+    {
+        "title": "Legion Ladder - I. forduló: Valorant (Stage #3)",
+        "teamSize": 5,
+        "maxTeamCount": 64,
+        "registrationStartsAt": "2021-03-01T15:00:00+00:00",
+        "registrationClosesAt": "2021-03-06T12:15:00+00:00",
+        "tournamentStartsAt": "2021-03-06T13:00:00+00:00",
+        "game": "brawl",
+        "gameMode": "TOURNAMENT_GAMEMODE_DRAFT",
+        "bracketType": "TOURNAMENT_BRACKET_TYPE_SINGLE_ELIMINATION",
+        "groupStage": "TOURNAMENT_GROUP_STAGE_FALSE",
+        "description": " ",
+        "internalWalletId": null,
+        "entryFee": {
+            "amount": 0,
+            "currency": "ESM"
+        },
+        "createdAt": "2023-04-28T13:09:05+00:00",
+        "createdBy": "zoli",
+        "status": "TOURNAMENT_STATUS_PUBLISHED"
+    },
+    {
+        "title": "Brawl Stars - #SamsunGGamer Reco..",
+        "teamSize": 1,
+        "maxTeamCount": 64,
+        "registrationStartsAt": "2021-03-01T15:00:00+00:00",
+        "registrationClosesAt": "2021-03-06T12:15:00+00:00",
+        "tournamentStartsAt": "2021-03-06T13:00:00+00:00",
+        "game": "brawl",
+        "gameMode": "TOURNAMENT_GAMEMODE_DRAFT",
+        "bracketType": "TOURNAMENT_BRACKET_TYPE_SINGLE_ELIMINATION",
+        "groupStage": "TOURNAMENT_GROUP_STAGE_FALSE",
+        "description": " ",
+        "internalWalletId": null,
+        "entryFee": {
+            "amount": 0,
+            "currency": "ESM"
+        },
+        "createdAt": "2023-04-28T13:09:05+00:00",
+        "createdBy": "zoli",
+        "status": "TOURNAMENT_STATUS_PUBLISHED"
     }
 ]
