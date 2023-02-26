@@ -44,10 +44,10 @@ function ImagePickerComponent({ onSubmit }) {
     <View style={{ position: "relative", minHeight: 150 }}>
       {image && <Image source={{ uri: image }} style={styles.image} />}
       <View style={styles.scores}>
-        <Text style={{ padding: 10, margin: 10, color: "white" }}>
+        <Text style={{ padding: 10, margin: 10, color: "black" }}>
           {scoreOne}
         </Text>
-        <Text style={{ padding: 10, margin: 10, color: "white" }}>
+        <Text style={{ padding: 10, margin: 10, color: "black" }}>
           {scoreTwo}
         </Text>
       </View>
