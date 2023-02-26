@@ -45,7 +45,7 @@ export default function Profile() {
         <Image style={styles.userImg} source={{ uri: user.photoURL }} />
         <View style={{ left: "5%" }}>
           <Text style={styles.welcome}>Welcome</Text>
-          <Text style={styles.userName}>{user.name}</Text>
+          <Text style={styles.userName} onPress={()=>navigation.navigate("Camera")}>{user.name}</Text>
         </View>
       </View>
       <ScrollView

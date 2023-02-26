@@ -10,6 +10,8 @@ import Profile from './screens/Profile'
 import BarcodeScanner from './screens/BarcodeScanner'
 import LoginScreen from './screens/LoginScreen'
 import LoginWithQR from './screens/LoginWithQR'
+import CreateChallenge from './components/CreateChallenge';
+import Camera from './screens/Camera';
 
 const Stack = createNativeStackNavigator();
 
@@ -30,6 +32,8 @@ const StackNavigator = () => {
         <Stack.Screen name="Profile" component={Profile} />
         <Stack.Screen name="Barcode" component={BarcodeScanner} />
         <Stack.Screen name="LoginWithQR" component={LoginWithQR} />
+        <Stack.Screen name="CreateChallenge" component={CreateChallenge} />
+        <Stack.Screen name="Camera" component={Camera} />
       </Stack.Group>
     </Stack.Navigator>
   );
