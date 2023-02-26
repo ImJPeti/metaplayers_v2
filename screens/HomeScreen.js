@@ -3,12 +3,10 @@ import {
   Text,
   StyleSheet,
   SafeAreaView,
-  Image,
   ScrollView,
-  FlatList,
   TouchableOpacity
 } from "react-native";
-import React from 'react'
+import React, { useState } from 'react'
 import Camera from './Camera'
 import NavBar from './navBar'
 import { AntDesign, Entypo, Ionicons } from "@expo/vector-icons";
@@ -20,7 +18,6 @@ import { useNavigation } from "@react-navigation/core";
 
 const HomeScreen = () => {
   const navigation = useNavigation();
-
   return (
     <SafeAreaView style={styles.container}>
       <View style={{ flex: 1 }}>
@@ -33,7 +30,7 @@ const HomeScreen = () => {
             paddingBottom: 25,
           }}
         >
-          <Text style={styles.Category}>Dashboard</Text>
+          <Text style={styles.Category} onPress={()=>navigation.navigate("Login")}>Dashboard</Text>
           <TouchableOpacity onPress={()=>navigation.navigate("Profile")}>
             <Ionicons
               name="person-circle"
@@ -70,7 +67,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#262338",
     alignItems: "center",
     position: "relative",
-    fontFamily: "",
   },
   Category: {
     color: "white",
