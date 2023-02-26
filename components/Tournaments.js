@@ -11,10 +11,6 @@ import React from "react";
 import { AntDesign, Entypo, Ionicons } from "@expo/vector-icons";
 import data from "../datas/tournament.json";
 
-data.forEach((element) => {
-  console.log(element)
-})
-
 const Tournaments = () => {
   return (
     <View>
