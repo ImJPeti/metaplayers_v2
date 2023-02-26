@@ -1,16 +1,18 @@
 import { View, Text, StyleSheet } from 'react-native'
 import React from 'react'
 import NavBar from './navBar'
+import Tournaments from '../components/Tournaments'
 
-const Tournaments = () => {
+const TournamentScreen = () => {
   return (
     <View style={styles.container}>
+      <Tournaments />
       <NavBar />
     </View>
-  )
-}
+  );
+};
 
-export default Tournaments
+export default TournamentScreen;
 const styles = StyleSheet.create({
   container: {
     flex: 1,

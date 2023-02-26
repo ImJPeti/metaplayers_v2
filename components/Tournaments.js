@@ -11,7 +11,11 @@ import React from "react";
 import { AntDesign, Entypo, Ionicons } from "@expo/vector-icons";
 import data from "../datas/tournament.json";
 
+console.log(data)
 const Tournaments = () => {
+
+  const splitDate = data[0].tournamentStartsAt.split("-");
+
   return (
     <View>
       <ScrollView style={{ marginBottom: 50 }}>
@@ -35,25 +39,36 @@ const Tournaments = () => {
           <View style={styles.orgsContainer}>
             <View style={styles.textSide}>
               <Image
-                source={require("../assets/warzone.jpg")}
+                source={require("../assets/csgoTour.jpg")}
                 style={styles.gameImg}
               />
-            </View>
-          </View>
-          <View style={styles.orgsContainer}>
-            <View style={styles.textSide}>
-              <Image
-                source={require("../assets/fifa.jpg")}
-                style={styles.gameImg}
-              />
-            </View>
-          </View>
-          <View style={styles.orgsContainer}>
-            <View style={styles.textSide}>
-              <Image
-                source={require("../assets/pubg.jpg")}
-                style={styles.gameImg}
-              />
+              <View>
+                <Text
+                  style={{
+                    color: "white",
+                    fontSize: 15,
+                    fontWeight: "bold",
+                    marginTop: 10,
+                    textAlign: "center",
+                    letterSpacing: 0.7,
+                  }}
+                >
+                  {data[0].title}
+                </Text>
+                <Text
+                  style={{
+                    color: "white",
+                    marginTop: 6,
+                    fontWeight: "200",
+                    marginLeft: 2,
+                  }}
+                >
+                  Team size: {data[0].teamSize}
+                </Text>
+                <View style={{ backgroundColor: "#6E7191", width: 100, marginLeft: 5, marginTop: 8, padding: 6, borderRadius: 10}}>
+                  <Text style={{ color: "white", textAlign: "center" }}>{splitDate[1]}/{splitDate[2][1]}/{splitDate[0]}</Text>
+                </View>
+              </View>
             </View>
           </View>
         </ScrollView>
@@ -81,11 +96,9 @@ const styles = StyleSheet.create({
   orgsContainer: {
     borderRadius: 10,
     marginTop: 50,
-    width: 200,
-    height: 230,
-    backgroundColor: "white",
-    display: "flex",
-    flexDirection: "row",
+    width: 370,
+    height: 300,
+    backgroundColor: "transparent",
     marginRight: 20,
     opacity: 0.8,
   },
@@ -107,9 +120,12 @@ const styles = StyleSheet.create({
     left: 10,
   },
   gameImg: {
-    width: 200,
-    height: 230,
+    width: 370,
+    height: 200,
     borderRadius: 10,
   },
-  
+  textSide: {
+    display: "flex",
+    flexDirection: "column",
+  }
 });

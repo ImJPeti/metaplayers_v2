@@ -70,7 +70,7 @@ export default function Profile() {
 
         <View style={styles.category}>
           <View>
-            <TouchableOpacity onPress={()=>navigation.navigate("Barcode")}>
+            <TouchableOpacity onPress={() => navigation.navigate("Barcode")}>
               <View style={{ flexDirection: "row", paddingTop: "5%" }}>
                 <View
                   style={{
@@ -100,7 +100,7 @@ export default function Profile() {
                     fontWeight: "bold",
                   }}
                 >
-                  Login with QR Code
+                  Login using your phone
                 </Text>
               </View>
             </TouchableOpacity>
@@ -134,7 +134,7 @@ export default function Profile() {
                     top: "8%",
                     left: "10%",
                     fontWeight: "bold",
-                    color: "white"
+                    color: "white",
                   }}
                 >
                   Settings
